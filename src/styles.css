@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.appliance-page {
+  /* text-align: center; */
+  /* margin-top: 80px; */
+  font-weight: 300;
+  /* margin-bottom: 4em; */
+  height: 100%;
+  min-height: 10em;
+  /* max-height: 60vh; */
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.bird-image {
+  /* height: 215px;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+  background: #fff;
+  cursor: pointer; */
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+  cursor: pointer;
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0px;
+}
+
+.bird-image:hover {
+  opacity: 0.5;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+figure {
+  background: linear-gradient(to left, #554346, #45505b) !important;
+  overflow: hidden;
+}
+figure img {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure:hover img {
+  opacity: 0.5;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 215px;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  cursor: pointer;
+  background: linear-gradient(to left, #554346, #45505b) !important;
+}
+
+figure:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.title {
+  text-align: center;
+  font-size: 4.25rem;
+  font-style: normal;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: bold;
+}
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+.map-bird-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+}
+
+/* Read more text */
+/* #card-body {
+  height: 180px;
+  width: 500px;
+} */
+#overflow_text {
+  width: 500px;
+}
+
+#toggle_text {
+  cursor: pointer;
+}
+
+.admin-container {
+  background: #fafafa;
+}
